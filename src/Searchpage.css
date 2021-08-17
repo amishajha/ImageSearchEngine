@@ -1,0 +1,119 @@
+.input-group {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 80%;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 19px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.form-control {
+  padding: 16px;
+  border: none;
+  margin-right: 30px;
+}
+
+.form-control:focus {
+  outline: 0;
+  border-color: #ccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn {
+  margin-left: 30px;
+  width: 120px;
+  height: 60px;
+  border-radius: 7px;
+  background-color: black;
+  margin-top: 30px;
+  font-size: 22px;
+}
+.app {
+  width: 100wh;
+
+  height: 30vh;
+  display: flex;
+
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.image {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 6px;
+  grid-column-gap: 10px;
+  margin: auto;
+}
+
+.image > img {
+  width: 290px;
+  height: 240px;
+  border-radius: 9px;
+  vertical-align: bottom;
+}
+li:last-child {
+  flex-grow: 5;
+  list-style: none;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 700px) {
+  .image {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 6px;
+    grid-column-gap: 6px;
+    margin: auto;
+  }
+
+  .image > img {
+    width: 310px;
+    height: 230px;
+    border-radius: 9px;
+    vertical-align: bottom;
+  }
+}
+@media screen and (max-width: 320px) {
+  .image {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 6px;
+    grid-column-gap: 6px;
+    margin: auto;
+  }
+
+  .image > img {
+    width: 250px;
+    height: 230px;
+    border-radius: 9px;
+    vertical-align: bottom;
+  }
+}
+@media screen and (max-width: 280px) {
+  .image {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 6px;
+    grid-column-gap: 6px;
+    margin: auto;
+  }
+
+  .image > img {
+    width: 220px;
+    height: 230px;
+    border-radius: 9px;
+    vertical-align: bottom;
+  }
+}
